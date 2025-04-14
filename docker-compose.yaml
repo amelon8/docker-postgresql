@@ -1,0 +1,12 @@
+services:
+  postgresql:
+    image: bitnami/postgresql:latest
+    container_name: postgresql-01
+    restart: always
+    tty: true
+    user: postgres
+    environment:
+      - POSTGRESQL_PASSWORD=test123
+    volumes:
+      - ${PWD}/postgresql-data:/bitnami/postgresql
+
