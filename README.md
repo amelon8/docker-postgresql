@@ -1,12 +1,6 @@
 # docker-postgresql
 
-- Build the Docker image.
-
-```
-docker-compose build
-```
-
-- Bring up the Docker container and check to see if it's running.
+- Bring up the Docker container. Check if DB is running.
 
 ```
 docker-compose up -d
@@ -19,7 +13,7 @@ docker-compose ps
 docker-compose exec postgresql sh
 ```
 
-- Run psql (user: 'postgres', password: <env POSTGRESQL_PASSWORD> - see `docker-compose.yaml`)
+- Run psql (user: `postgres`, password: `<env POSTGRESQL_PASSWORD>` - see `docker-compose.yaml`)
 
 ```
 % psql
@@ -35,7 +29,7 @@ postgres=# \l
 (3 rows)
 ```
 
-- To stop the container.
+- Stop the container.
 
 ```
 docker-compose down
