@@ -1,6 +1,6 @@
 # docker-postgresql
 
-- Bring up the Docker container. Check if DB is running.
+- Bring up the Docker container. Verify if container is running.
 
 ```
 docker-compose up -d
@@ -34,3 +34,16 @@ postgres=# \l
 ```
 docker-compose down
 ```
+
+## pgadmin4
+
+### Configure DB connection*
+* Server Name: `postgresql`
+* Host name/address: `postgresql`
+* Port: 5432
+* Database: `facebook`
+* User: `postgres`
+* Password: `<env POSTGRESQL_PASSWORD>`
+
+### pgadmin4 UI
+* http://localhost:10009
